@@ -1,0 +1,7 @@
+# Frontend Travique
+
+# Backend Travique
+travique-backend/vendor/
+travique-backend/.env/
+travique-backend/.env*/
+travique-backend/storage/*.key
