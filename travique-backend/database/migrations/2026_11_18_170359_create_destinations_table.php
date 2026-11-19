@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('destinations', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('slug')->unique(); // URL-Friendlu Cth : kawah-ijen
+            $table->text('description');
+            $table->string('location');
+            $table->string('image')->nullable(); // Path / URL Gambar
             $table->timestamps();
         });
     }
